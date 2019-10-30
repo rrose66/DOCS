@@ -1,0 +1,27 @@
+﻿	1. Open AccuRev to create new workspace:
+		a. Right click on BOMinFEDE_v1.0_DEV_UI
+		b. Select New Workspace
+		c. Name workspace
+		d. Save to target folder w/checkmark to append workspace name
+		e. Click Finish
+	
+	2. Open Eclipse
+		a. Set workspace
+		b. Select File | Import ...
+		c. Choose Existing Gradle Project
+		d. Click Next on splash screen
+		e. Set root directory (AccuRev target folder made in step d)
+		f. Click Next
+		g. Select Local installation directory
+		h. Set Gradle directory [C:\Program Files (x86)\gradle-2.14.1]
+		i. Click Finish
+	
+	3. Set to Run project
+		a. Select Run | Run Configurations...
+		b. Double click on Java Application
+		c. Set configuration Name
+		d. Search for main class "BOMApplication" (--> bom.ford.pd.bom.ui.BOMApplication)
+		e. Click on Arguments tab
+		f. Enter the following into Program arguments field (include all dashes):
+		--enableJsonSnapshot=true --enableFmsDownload=false --enableBomServer=true --enableWersValidation=true
+	4. Click Run
